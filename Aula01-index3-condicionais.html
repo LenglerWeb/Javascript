@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula01 - Condicionais</title>
+</head>
+<body>
+   <h1>Condicionais</h1> 
+
+<script type="text/javascript">
+console.log('** if / else **')
+	if (true){
+		console.log('Olá, mundo!')
+	}
+	if(false){
+		console.log('Não vai ser')
+	}
+	if(3>4){
+		console.log('3 > 4')
+	}
+	if(3<=4){
+		console.log('3 <= 4')
+	}
+	var textoVazio = ''
+	if(!textoVazio){
+		console.log('textoVazio')
+	}
+	if(textoVazio){
+		console.log('Oi')
+	} else {
+		console.log('Olá')
+	}
+
+	if (10 > 20){
+		console.log('10 > 20')
+	} else if (10 <= 12){
+		console.log('10 <= 12')
+	} else {
+		console.log('Nada a imprimir!')
+	}
+
+console.log('**  Ternários  **')
+	console.log(true ? 'Programador' : 'Designer')
+	console.log(false ? 'Programador' : 'Designer')
+
+	var idade = 41
+	console.log(idade >= 18 ? 'Maior de idade' : 'Menor de idade')
+	console.log(idade > 42 ? 'Maior de idade' : 'Menor de idade')
+
+console.log('**  Switch / Case / Break **')
+	var cor = 'amarelo';
+	switch (cor){
+		case 'azul':
+		console.log('Cor Azul')
+		break;
+
+	 	case 'verde':
+	 	console.log('Cor verde')
+	 	break;
+
+	 	case 'Vermelho':
+	 	console.log('Cor Vermelho')
+	 	break;
+
+	 	default:
+	 	console.log('Cor Amarelo')
+	 	break;
+}
+
+	switch (cor){
+		case 'vermelho' :
+		case 'amarelo' :
+		case 'laranja' :
+			console.log('Cor Quente!')
+			break
+
+		case 'verde' :
+		case 'azul' :
+		case 'roxo' :
+			console.log('Cor Fria!')
+			break
+
+		default:
+			console.log('Não identificado!')
+	}
+
+console.log('**  ARRAYS  **')
+	var numeros = [5, 3, 12, 17, 10, 99]
+	console.log(numeros)
+	console.log('Número na posição 3: ',numeros[2])
+	console.log('Número na posição 6: ',numeros[5])
+	console.log('Número na posição 1: ',numeros[0])
+
+	console.log('o .length, diz quantidades de números possui o array: ',numeros.length)
+
+	console.log('o .pop() remove o último número do array: ',numeros.pop())
+	console.log('Array depois do .pop()',numeros)
+</script>
+
+</body>
+</html>
