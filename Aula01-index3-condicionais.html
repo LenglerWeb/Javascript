@@ -93,10 +93,59 @@ console.log('**  ARRAYS  **')
 	console.log('Número na posição 6: ',numeros[5])
 	console.log('Número na posição 1: ',numeros[0])
 
-	console.log('o .length, diz quantidades de números possui o array: ',numeros.length)
+	console.log('o .length, diz quantidades de elementos possui o array: ',numeros.length)
 
 	console.log('o .pop() remove o último número do array: ',numeros.pop())
 	console.log('Array depois do .pop()',numeros)
+
+	var numerosRetornados = numeros.pop()
+	console.log('Numero Retornado: ',numerosRetornados)
+	console.log(numeros)
+
+	console.log(numeros.slice(2,4))
+	console.log(numeros.slice(3))
+
+	console.log(numeros.join('--'))
+
+	var usuario = ['Eduardo', 41, 'Programador', 2019, 'Brasileiro']
+	console.log(usuario)
+	usuario.push('RS')
+	console.log(usuario)
+	//retorna true ou false se o intem informado existe dentro do Array.
+	console.log(usuario.includes('Brasileiro'))
+	console.log(usuario.includes('Carioca'))
+
+	//retorna a posição que está o elemento dentro do Array
+	console.log('Retorna a posição, se existe, do elemento 2019 dentro do Array usuario:',usuario.indexOf(2019))
+
+	//Como juntar os elementos de dois arrays em um só
+	var array1 = [3, 2, 1]
+	var array2 = ['Programador', 'Eduardo', 'Lengler']
+	var array3 = ['Fulano', 'Ciclano']
+
+	var resultado = array1.concat(array2)
+	console.log(resultado)
+	//Ou inverter a ordem dos arrays
+	var resultadoInvertido = array2.concat(array1)
+	console.log(resultadoInvertido)
+
+	//Concatenar 3 arrays para um só
+	var resultadoTresArrays = array1.concat(array2).concat(array3)
+	//Poderia ser deste modo também: array1.concat(array2).concat(['Fulano', 'Ciclano'])
+	//Poderia ser também array1.concat(array1, array3)
+	console.log(resultadoTresArrays)
+
+	console.log([...array1, ...array2, ...array3])
+
+	console.log(usuario)
+	var nome = usuario[0]
+	var idade = usuario[1]
+	var ano = usuario[3]
+	console.log(nome, idade, ano)
+
+	var [nome, idade, , ano] = usuario
+	console.log(nome, idade, ano)
+
 </script>
 
 </body>
