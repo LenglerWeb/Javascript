@@ -1,0 +1,103 @@
+var jogo0 = 'domingo';
+var jogo1 = 'terça';
+
+function hojeSeJoga(jogo) { 
+  if (jogo == jogo0) { 
+    return 'Hoje é dia de futebol!!!';
+  } else if (jogo == jogo1){ 
+    return 'Hoje não é dia de futebol :(';
+  } 
+}
+
+###########################################
+function eMaior(a, b){
+  if (a > b){
+    return a;
+  } else if (b > a) {
+    return b;
+  } else {
+    return a;
+  }
+}
+
+###########################################
+function sinal(a){
+  if (a > 0){
+    return "1";
+  } else if (a == 0){
+    return "0";
+  } else {
+    return "-1"
+  }
+}
+
+###########################################
+operador && (que é lido como 'e')
+
+function estaEntre(numero, base, limite) {
+  return numero > base && numero < limite;
+}
+
+############################################
+o operador || (que é lido como 'ou')
+
+function eMaiorOuMenor(numero1, numero2, numero3) {
+  return numero2 > numero1 || numero2 < numero3;
+}
+
+#############################################
+Podemos dizer que é um número da sorte se o número:
+
+    é positivo
+    é um múltiplo de 2 ou 3
+    não é 15 
+
+Escreva a função eNumeroDaSorte que, recebendo um número, diz a se é um 
+número da sorte. Lembre-se de que o número deve obedecer às três 
+condições mencionadas. Seu desafio adicional será: NÃO use o if.
+
+function eNumeroDaSorte(num){
+return num > 0 && num % 2 == 0 || num % 3 == 0 && num != 15;
+}
+
+Dá-me uma dica!
+Para descobrir se um número é multiplo de outro o resto da divisão deve resultar em 0.
+15/3 = 5 e o resto é 0.
+Em programação para sabermos o resto de uma divisão, usamos o símbolo de porcentagem (%).
+Assim:
+15%3 == 0, dessa forma sabemos que 15 é múltiplo de 3.
+
+############################################################
+Primeiro de tudo precisamos saber que um banco está fechado quando é fim de semana (sábado ou domingo) e não está no horário bancário (9 às 15hs).
+
+Defina a função possoIrAoBanco que, receba dois parâmetros, o primeiro é diaDaSemana (string) e o segundo horaAtual(numero), a função deve retornar true, apenas se o banco estiver aberto.
+
+
+var numeros = [1, 2, 0, -1];
+function maisMenos(muneros){
+  var quantidade = numeros.length;
+  var positivos = 0;
+  var zeros = 0;
+  var negativos = 0;
+ 
+  for (var i = 0; i < quantidade; i++) {
+    if (numeros[i] > 0) {
+      positivos = positivos + 1;
+      } else if (numeros[i] < 0) {
+      negativos = negativos + 1;
+        } else {
+      zeros = zeros + 1;
+  }
+}
+  
+  positivos = positivos / quantidade;
+  zeros = zeros / quantidade;
+  negativos = negativos / quantidade;
+  var array = [positivos, zeros, negativos];
+  console.log(array);
+return array;
+}
+
+
+var meuArray = ["a", "la", "grade"]
+var posicao = meuArray.indexOf[2]
