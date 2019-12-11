@@ -26,9 +26,40 @@
 		console.log(seriesFavoritasDoHector)
 	}
 
-	console.log(["olá", "mundo"] === ["mundo", "olá"])
-	console.log(["mara", "juliana"] === 'pessoas')
-	console.log('pessoas' === 'pessoas')
+	console.log('["olá", "mundo"] === ["mundo", "olá"] =', ["olá", "mundo"] === ["mundo", "olá"])
+	console.log('["mara", "juliana"] === pessoas =',["mara", "juliana"] === 'pessoas')
+	console.log('pessoas === pessoas =', 'pessoas' === 'pessoas')
+
+
+	let num = [5,3,6,9,10]
+	console.log(num)
+	num[5] = 0
+	num.push(21)
+	console.log(num.length)
+	num.sort()
+	
+	let num2 = [5,3,6,9,10]
+	for(let i=0; i<num2.length; i++){
+		console.log(`A posição ${i} tem o valor ${num2[i]}`)
+	}
+	console.log('=> Mostrar o ARRAY com o FOR mais simploficado:')
+	for(var i in num2){
+		console.log(`A posição ${i} tem o valor ${num2[i]}`)
+	}
+	console.log('=> Novo Array:')
+	var array = [101,2,10,3,9,51]
+	console.log(array)
+	let pos = array.indexOf(3)
+	for(let i in array){
+		if(pos == -1){
+			console.log('Valor não encontrado!')
+		} else {
+			console.log(`O valor 3 está na posição ${pos}`)
+		}
+	}
+
+
+
 
 
 
