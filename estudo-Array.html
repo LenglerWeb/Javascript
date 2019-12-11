@@ -47,20 +47,26 @@
 		console.log(`A posição ${i} tem o valor ${num2[i]}`)
 	}
 	console.log('=> Novo Array:')
-	var array = [101,2,10,3,9,51]
+	var array = [1, 6, 7, 6]
 	console.log(array)
-	let pos = array.indexOf(3)
+	let pos = array.indexOf(7)
 	for(let i in array){
 		if(pos == -1){
 			console.log('Valor não encontrado!')
 		} else {
-			console.log(`O valor 3 está na posição ${pos}`)
+			console.log(`O valor 7 está na posição ${pos}`) 
 		}
 	}
 
+	function contem(valor) {
+var array = [1, 6, 7, 6]
+for (var i = 0; i < array.length; i++) {
 
+ return (array.indexOf(valor) != (-1));
 
+} 
 
+}
 
 
 /*
