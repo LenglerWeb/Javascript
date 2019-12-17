@@ -12,7 +12,64 @@
 		console.log(lista.indexOf('uva'))
 		console.log(lista[2])
 	}
+	console.log('Super-heróis - Identidas Secretas')
+	function herois(){
+		var identidadeSecreta = ["Bruce Wayne", "Barry Allen", "Peter Parker", 'Clark Kent']
+		console.log(identidadeSecreta[1])
+	}
 
+	console.log('Séries favoritas')
+	function seriesFavoritas(){
+		var seriesFavoritasDaAna = ["Game of Thrones", "Breaking Bad", "House of Cards"];
+		var seriesFavoritasDoHector = ["Blindspot", "Blacklist"]
+		console.log(seriesFavoritasDaAna[0])
+		console.log(seriesFavoritasDoHector)
+	}
+
+	console.log('["olá", "mundo"] === ["mundo", "olá"] =', ["olá", "mundo"] === ["mundo", "olá"])
+	console.log('["mara", "juliana"] === pessoas =',["mara", "juliana"] === 'pessoas')
+	console.log('pessoas === pessoas =', 'pessoas' === 'pessoas')
+
+
+	let num = [5,3,6,9,10]
+	console.log(num)
+	num[5] = 0
+	num.push(21)
+	console.log(num.length)
+	num.sort()
+	
+	let num2 = [5,3,6,9,10]
+	for(let i=0; i<num2.length; i++){
+		console.log(`A posição ${i} tem o valor ${num2[i]}`)
+	}
+	console.log('=> Mostrar o ARRAY com o FOR mais simploficado:')
+	for(var i in num2){
+		console.log(`A posição ${i} tem o valor ${num2[i]}`)
+	}
+	console.log('=> Novo Array:')
+	var array = [1, 6, 7, 6]
+	console.log(array)
+	let pos = array.indexOf(7)
+	for(let i in array){
+		if(pos == -1){
+			console.log('Valor não encontrado!')
+		} else {
+			console.log(`O valor 7 está na posição ${pos}`) 
+		}
+	}
+
+	function contem(valor) {
+var array = [1, 6, 7, 6]
+for (var i = 0; i < array.length; i++) {
+
+ return (array.indexOf(valor) != (-1));
+
+} 
+
+}
+
+
+/*
 	function contem(elemento){
   var array =[];
   var array0 = [1, 8, 5]
@@ -27,7 +84,7 @@
     }
   } 
   }
-
+*/
 	</script>
 </body>
 </html>
