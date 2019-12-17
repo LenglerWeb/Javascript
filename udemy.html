@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Curso UDEMY de Javascript</title>
+
+	
+
+</head>
+<body>
+	<h1>Abrir o arquivo udemy.js</h1>
+
+	<script type="text/javascript">
+		
+	console.log('# Variávei e seus tipos')
+	var nome = "Eduardo Lengler"
+	var idade = 41
+	var fumante = false
+	console.log("Nome: ",nome)
+	console.log("Idade: ",idade)
+	console.log("É fumanate? ",fumante)
+
+	console.log('# Operadores Matemáticos')
+	var a = 5
+	var b = 2
+	var soma = a + b
+	var subtracao = a - b
+	var multiplicacao = a * b
+	var divisao = a / b
+	console.log('Soma de a + b =', soma)
+	console.log('Subtração de a - b =', subtracao)
+	console.log('Multiplicação de a * b = ', multiplicacao)
+	console.log('Divisão de a / b =', divisao)
+
+	console.log('# Condicionais IF / ELSE')
+	console.log("Sinal de Atribuição: =")
+	console.log("Sinal de Comparação de igualdade: ==")
+	console.log("Sinal de Comparação de diferença: !=")
+	console.log('Sinal de Comparação de igualdade entre tipos: ===')
+	
+	var a = 5
+	var b = 3
+	console.log("a = 5 e b = 3, if(a==b): ")
+	if (a == b) {
+		console.log("Eles são Iguais")
+	} else {
+		console.log("Eles são Diferentes")
+	}
+
+	var cpf = "950.418.000-06"
+	var idade = 41
+	console.log("CPF: '950.418.000-06' === idade: 41 são ou não são Iguais?")
+	if(cpf === idade){
+		console.log("São Iguais")
+	} else {
+		console.log("Não são Iguais")
+	}
+
+	console.log("# Operadores de Incremento:")
+	var a = 5
+	a += 2
+	var b = 5
+	var c = 5
+	var d = 5
+	var e = 5
+	e++
+	var f = 5
+	f--
+	console.log("a vale 5 -> a += 2: ", a)
+	console.log("b vale 5 -> b -= 2: ", b -= 2)
+	console.log("c vale 5 -> c *= 2: ", c *= 2)
+	console.log("d vale 5 -> d /= 2: ", d /= 2)
+	console.log("e++: ", e)
+	console.log("f--: ", f)
+
+	console.log("# Estrutura de Repetição:")
+	console.log("1) While:")
+	var i = 1;
+	while(i <= 10){
+		console.log("While de i:",i)
+		i++
+	}
+
+	console.log("2) Do While:")
+	var x = 1
+	do {
+		console.log("Do While de x:",x)
+		x++
+	} while(x <= 5)
+
+	console.log("3) For:")
+	for(var y = 1; y <= 10; y++){
+		console.log("For de y:",y)
+	}
+
+	console.log("# Tipos de Funções: Execução e Retorno")
+	console.log("-> Excução: ex.: escreverNome()")
+
+	function escreverNome(){
+		console.log("Eduardo Lengler")
+	}
+	escreverNome()
+
+	console.log("-> Retorno: ex.: converterTemperatura(celsius)")
+	function converterTempreatura(celsius){
+		var fah = (celsius * 1.8) + 32
+		return fah
+	}
+	var fahreinheit = converterTempreatura(30)
+	console.log("30º fahreinheit é igual à "+fahreinheit+"°"+" Celsius" )
+
+	console.log("-> Funções Matemáticas:")
+	console.log("Calcular Diária:")
+	console.log("Para arredondar para cima -> 6.5 usa Math.round() == 7.0")
+	console.log("Para arredondar sempre para cima -> 6.1 usa Math.ceil() == 7.0")
+	console.log("Para arredondar para baixo -> 6.9 usa Math.floor() == 6.0")
+	console.log("Para usar dois números depois da vírgula -> (2000/30).toFixed(2)")
+	
+	function calcularDiaria(){
+		return (2000/30).toFixed(2)
+	}
+	var diaria = calcularDiaria()
+	console.log("Valor da Diária de R$2000 / 30 dias: R$"+diaria)
+
+	console.log("-> Criando uma Função com Parâmentros: salario e dias")
+	function calclarDiaria(salario, dias){
+		return (salario/dias).toFixed(2)
+	}
+	var diaria = calclarDiaria(5000, 20)
+	console.log("Valor da Diária de R$5000 / 20 dias: R$"+diaria)
+
+
+	</script>
+
+</body>
+</html>
