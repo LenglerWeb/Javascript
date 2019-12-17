@@ -19,7 +19,7 @@
 	console.log("Nome: ",nome)
 	console.log("Idade: ",idade)
 	console.log("É fumanate? ",fumante)
-
+console.log(" ")
 	console.log('# Operadores Matemáticos')
 	var a = 5
 	var b = 2
@@ -31,13 +31,13 @@
 	console.log('Subtração de a - b =', subtracao)
 	console.log('Multiplicação de a * b = ', multiplicacao)
 	console.log('Divisão de a / b =', divisao)
-
+console.log(" ")
 	console.log('# Condicionais IF / ELSE')
 	console.log("Sinal de Atribuição: =")
 	console.log("Sinal de Comparação de igualdade: ==")
 	console.log("Sinal de Comparação de diferença: !=")
 	console.log('Sinal de Comparação de igualdade entre tipos: ===')
-	
+console.log(" ")	
 	var a = 5
 	var b = 3
 	console.log("a = 5 e b = 3, if(a==b): ")
@@ -46,7 +46,7 @@
 	} else {
 		console.log("Eles são Diferentes")
 	}
-
+console.log(" ")
 	var cpf = "950.418.000-06"
 	var idade = 41
 	console.log("CPF: '950.418.000-06' === idade: 41 são ou não são Iguais?")
@@ -55,7 +55,7 @@
 	} else {
 		console.log("Não são Iguais")
 	}
-
+console.log(" ")
 	console.log("# Operadores de Incremento:")
 	var a = 5
 	a += 2
@@ -72,7 +72,7 @@
 	console.log("d vale 5 -> d /= 2: ", d /= 2)
 	console.log("e++: ", e)
 	console.log("f--: ", f)
-
+console.log(" ")
 	console.log("# Estrutura de Repetição:")
 	console.log("1) While:")
 	var i = 1;
@@ -80,19 +80,19 @@
 		console.log("While de i:",i)
 		i++
 	}
-
+console.log(" ")
 	console.log("2) Do While:")
 	var x = 1
 	do {
 		console.log("Do While de x:",x)
 		x++
 	} while(x <= 5)
-
+console.log(" ")
 	console.log("3) For:")
 	for(var y = 1; y <= 10; y++){
 		console.log("For de y:",y)
 	}
-
+console.log(" ")
 	console.log("# Tipos de Funções: Execução e Retorno")
 	console.log("-> Excução: ex.: escreverNome()")
 
@@ -100,7 +100,7 @@
 		console.log("Eduardo Lengler")
 	}
 	escreverNome()
-
+console.log(" ")
 	console.log("-> Retorno: ex.: converterTemperatura(celsius)")
 	function converterTempreatura(celsius){
 		var fah = (celsius * 1.8) + 32
@@ -108,7 +108,7 @@
 	}
 	var fahreinheit = converterTempreatura(30)
 	console.log("30º fahreinheit é igual à "+fahreinheit+"°"+" Celsius" )
-
+console.log(" ")
 	console.log("-> Funções Matemáticas:")
 	console.log("Calcular Diária:")
 	console.log("Para arredondar para cima -> 6.5 usa Math.round() == 7.0")
@@ -121,13 +121,28 @@
 	}
 	var diaria = calcularDiaria()
 	console.log("Valor da Diária de R$2000 / 30 dias: R$"+diaria)
-
+console.log(" ")
 	console.log("-> Criando uma Função com Parâmentros: salario e dias")
 	function calclarDiaria(salario, dias){
 		return (salario/dias).toFixed(2)
 	}
 	var diaria = calclarDiaria(5000, 20)
 	console.log("Valor da Diária de R$5000 / 20 dias: R$"+diaria)
+console.log(" ")
+	console.log("-> Escopo de Variáveis")
+	var bonus
+	function calcular(salario){
+		bonus = 300
+		return (salario / 20).toFixed(2)
+	}
+	var diaria = calcular(1000)
+	console.log("Valor da Diária de R$1000 / 20 dias: R$"+diaria+" bonificação de R$"+bonus)
+
+
+
+
+
+
 
 
 	</script>
