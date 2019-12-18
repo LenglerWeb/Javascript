@@ -136,7 +136,28 @@ console.log(" ")
 		return (salario / 20).toFixed(2)
 	}
 	var diaria = calcular(1000)
-	console.log("Valor da Diária de R$1000 / 20 dias: R$"+diaria+" bonificação de R$"+bonus)
+	console.log("Valor da Diária de R$1000 / 20 dias: R$"+diaria+" com bonificação de R$"+bonus)
+console.log(" ")
+
+	console.log("# Arrays:")
+	var lista = ["Uva", "Banana", "Maçã"]
+	console.log("Lista completa: "+lista);
+	for(var i=0; i<lista.length; i++){
+	console.log(i +") Item da lista: "+lista[i])
+	}
+console.log(" ")
+	console.log("# Inserir e Excluir elementos no ARRAY:")
+	console.log("-> Adicionar novo item no final do ARRAY com .push(elemento):")
+	var lista1 = ["Uva", "Banana", "Maçã"]
+	lista1.push("Mamão")
+	console.log("Lista com o novo elemento no FINAL: "+lista1)
+
+	console.log("-> Adicionar novo item no início do ARRAY com .unshift(elemento):")
+	lista1.unshift("Limão")
+	console.log("Lista com o novo elemento no INÍCIO: "+lista1)
+
+	console.log("-> Informa quantos elementos existen dentro do ARRAY com lista1.length :")
+	console.log("A lista1 contem "+lista1.length+" elementos.")
 
 
 
