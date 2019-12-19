@@ -334,12 +334,54 @@ console.log(" ")
 	var frase = "Seja bem-vindo, Eduardo!"
 	var palavra = frase.charAt(0)
 	console.log("A frase é: "+frase)	
-	for(var i)
 	
+	var i = 0
+	var letra = ""
+	var primeiraPalavra = ""
+	while( letra != " "){
+		letra = frase.charAt(i)
+		primeiraPalavra += letra
+		i++
+	}
+	console.log("A primeira palavra da frase é: "+primeiraPalavra)
+	
+console.log(" ")
+	console.log("# Usar .substr(a, b) para pegar uma letra e montar uma palavra de uma frase:")
+	var frase = "Curso de Javascript Fundamentos"
+	var primeira = ""
+	var letra = ''
+	var i = 0
+	while(letra != ' '){
+		letra = frase.charAt(i)
+		primeira = frase.substr(0, i)
+		i++
+	}
+	console.log(primeira)
+
+console.log(" ")
+	console.log("# Usar o .split() para separar as palavras de uma frase:")
+	var frase = 'O Grêmio é campeão!'
+	var palavras = frase.split(' ')[1]
+	console.log(palavras)
 
 
+console.log(" ")
+	console.log("# Usar o .toUpperCase() para deixar todas as letras da frase em MAIÚSCULO:")
+
+	var  nome = "Eduardo Ramos Lengler"
+	console.log(nome.toUpperCase())
 
 
+console.log(" ")
+	console.log("# Usar o .toLowerCase() para deixar todas as letras da frase em MINÚSCULO:")
+	console.log(nome.toLowerCase())
+
+console.log(" ")
+	console.log("-> Deixar a primeira letra sempre em MAIÚSCULA, independente se digitar tudo em MAIÚSCULA ou tudo em MINÚSCULA:")
+	var nome = "EDUARDO"
+	var letra = nome.toLowerCase()
+	var primeira = letra.charAt(0).toUpperCase()
+	console.log(primeira + letra.substr(1, letra.length))
 	</script>
 
 </body>
