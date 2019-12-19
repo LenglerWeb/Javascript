@@ -159,6 +159,78 @@ console.log(" ")
 	console.log("-> Informa quantos elementos existen dentro do ARRAY com lista1.length :")
 	console.log("A lista1 contem "+lista1.length+" elementos.")
 
+var lista2 = new Array()
+	lista2[0] = "Item1"
+	lista2[1] = "Item2"
+	lista2[2] = "Item3"
+	lista2[3] = "Item4"
+	console.log("A lista completa do array lista2: "+lista2)
+	console.log("Listar todos os elementos com suas posições dentro do ARRAY: ")
+	for(var i=0; i<lista2.length; i++){
+		console.log("O elemento dentro do ARRAY lista2["+i+"] = "+lista2[i])
+	}
+
+	console.log("-> Se não houver um elemento posquisado dentro do ARRAY lista2, irá retornar -1")
+	var resultado = lista2.indexOf("Item5")
+	console.log("Pesquisar se existe o Item5 no ARRAY lista2: "+resultado)
+	console.log("Pesquisar se existe o item1 no ARRAY lista2: "+resultado)
+
+console.log(" ")
+	console.log("# Como ordenar os elementos dentro do ARRAY lista3:")
+	var lista3 = ['Banana', 'Maçã', 'Uva', 'Mamão']
+	console.log(lista3)
+	console.log("-> Para ordenar os elementos dentro da lista3 usar o .sort()")
+	console.log(lista3.sort())
+	console.log("-> Adicionar Abacate no FIANL do array lista3: ")
+	lista3.push("Abacate")
+	console.log(lista3)
+	console.log("Lista3 ordenada: "+lista3.sort())
+
+console.log(" ")
+	console.log("-> Ordenar números dos elementos dentro do ARRAY megasena: ")
+	var megasena = [10, 2, 1, 5, 60, 28, 59, 33]
+	console.log("Números sorteados da MegaSena: "+megasena)
+	console.log("Ordenar os números sorteados: "+ megasena.sort())
+	console.log("Infelimente o .sort() não ordena corretamente a lista de número, é necessário criar uma função para realizar a ordenação corretamente:")
+	console.log("A function ordenarMegaSena(a,b) que retorna a-b: ")
+	function ordenarMegaSena(a, b){
+		return a-b
+	}
+	console.log("Ordenar os números sorteados: "+ megasena.sort(ordenarMegaSena))
+
+
+console.log(" ")
+	console.log("# Trabalhar com Números: ")
+	var x = 3
+	var y = 7
+	var z = 4
+
+	console.log("Somar "+x+"+"+y+"+"+z+" =", x+y+z)
+	console.log("-> Com Math.max(x, y, z) irá mostrar o MAIOR número.")
+	console.log("Qual o MAIOR número informado entre x, y, z: "+Math.max(x, y, z))
+
+	console.log("-> Com Math.min(x, y, z) irá mostrar o MENOR número.")
+	console.log("Qual o MENOR número informado entre x, y, z: "+Math.max(x, y, z))
+
+console.log(" ")
+	console.log("# Sorteio da Mega Sena:")
+	var numeros = []
+	var resultado
+
+	function ordenarNumeros(a, b){
+		return a-b
+	}
+
+	for(var i=0; i<6; i++){
+		resultado = Math.ceil(Math.random()*60)
+			if(numeros.indexOf(resultado) < 0){
+			numeros.push(resultado)
+			} 
+		
+		}
+		console.log(numeros)
+	
+	
 	console.log("-> Excluir o último elemento da lista1 com o .pop()")
 	lista1.pop()
 	console.log("Lista1 sem o último elemento: "+lista1)
@@ -166,6 +238,7 @@ console.log(" ")
 	console.log("-> Remover da Lista1 o primeiro item do ARRAY com .shift():")
 	lista1.shift()
 	console.log("Lista sem o primeiro elemento: "+lista1)
+
 
 	console.log("A lista1 agora tem "+lista1.length+" elementos")
 
@@ -180,6 +253,84 @@ console.log(" ")
 	console.log("-> Com o .indexOf(elemento) irá retornar a posição do elemento dentro do Array")
 	var resultado = lista2.indexOf("Item1")
 	console.log("A posição do Item1 no Array: "+resultado)
+
+
+console.log("### ADICIONAR ### no Método de Pesquisa em ARRAY: ")
+	
+	var lista2 = new Array()
+	lista2[0] = "Item1"
+	lista2[1] = "Item2"
+	lista2[2] = "Item3"
+	lista2[3] = "Item4"
+	console.log("A lista completa do array lista2: "+lista2)
+	console.log("Listar todos os elementos com suas posições dentro do ARRAY: ")
+	for(var i=0; i<lista2.length; i++){
+		console.log("O elemento dentro do ARRAY lista2["+i+"] = "+lista2[i])
+	}
+
+	console.log("-> Se não houver um elemento posquisado dentro do ARRAY lista2, irá retornar -1")
+	var resultado = lista2.indexOf("Item5")
+	console.log("Pesquisar se existe o Item5 no ARRAY lista2: "+resultado)
+	console.log("Pesquisar se existe o item1 no ARRAY lista2: "+resultado)
+
+console.log(" ")
+	console.log("# Como ordenar os elementos dentro do ARRAY lista3:")
+	var lista3 = ['Banana', 'Maçã', 'Uva', 'Mamão']
+	console.log(lista3)
+	console.log("-> Para ordenar os elementos dentro da lista3 usar o .sort()")
+	console.log(lista3.sort())
+	console.log("-> Adicionar Abacate no FIANL do array lista3: ")
+	lista3.push("Abacate")
+	console.log(lista3)
+	console.log("Lista3 ordenada: "+lista3.sort())
+
+console.log(" ")
+	console.log("-> Ordenar números dos elementos dentro do ARRAY megasena: ")
+	var megasena = [10, 2, 1, 5, 60, 28, 59, 33]
+	console.log("Números sorteados da MegaSena: "+megasena)
+	console.log("Ordenar os números sorteados: "+ megasena.sort())
+	console.log("Infelimente o .sort() não ordena corretamente a lista de número, é necessário criar uma função para realizar a ordenação corretamente:")
+	console.log("A function ordenarMegaSena(a,b) que retorna a-b: ")
+	function ordenarMegaSena(a, b){
+		return a-b
+	}
+	console.log("Ordenar os números sorteados: "+ megasena.sort(ordenarMegaSena))
+
+
+console.log(" ")
+	console.log("# Trabalhar com Números: ")
+	var x = 3
+	var y = 7
+	var z = 4
+
+	console.log("Somar "+x+"+"+y+"+"+z+" =", x+y+z)
+	console.log("-> Com Math.max(x, y, z) irá mostrar o MAIOR número.")
+	console.log("Qual o MAIOR número informado entre x, y, z: "+Math.max(x, y, z))
+
+	console.log("-> Com Math.min(x, y, z) irá mostrar o MENOR número.")
+	console.log("Qual o MENOR número informado entre x, y, z: "+Math.max(x, y, z))
+
+console.log(" ")
+	console.log("# Sorteio da Mega Sena:")
+	var numeros = []
+	var resultado
+
+	function ordenarNumeros(a, b){
+		return a-b
+	}
+
+	for(var i=0; i<6; i++){
+		resultado = Math.ceil(Math.random()*60)
+			if(numeros.indexOf(resultado) < 0){
+			numeros.push(resultado)
+			} 
+		
+		}
+		console.log(numeros)
+	
+	
+	
+
 
 
 
