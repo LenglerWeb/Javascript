@@ -36,13 +36,13 @@
 	num[5] = 0
 	num.push(21)
 	console.log(num.length)
-	num.sort()
+	//num.sort()
 	
 	let num2 = [5,3,6,9,10]
 	for(let i=0; i<num2.length; i++){
 		console.log(`A posição ${i} tem o valor ${num2[i]}`)
 	}
-	console.log('=> Mostrar o ARRAY com o FOR mais simploficado:')
+	console.log('=> Mostrar o ARRAY com o FOR mais simplificado:')
 	for(var i in num2){
 		console.log(`A posição ${i} tem o valor ${num2[i]}`)
 	}
@@ -85,6 +85,117 @@ for (var i = 0; i < array.length; i++) {
   } 
   }
 */
+/*console.log("*> TRUCO <*")
+function naipeDeTruco(naipe){
+  let espadas = [];
+  let copas =   [];
+  let ouros =  [];
+  let paus  =  [];
+
+  if(naipe === "espadas"){
+	for(var i=1; i <14; i++){
+  	 espadas =[i +" de espadas"]
+    
+  } 
+  
+}
+  //return espadas;
+  console.log(espadas[i])
+}
+function naipeDeTruco(naipe) {
+  var resultado = [];
+  for (var i = 1; i <= 12; i++) {
+    if (i == 8) {
+      i = i + 1;
+    } else {
+      resultado.push(i + " de " + naipe);
+    }
+  }
+  return resultado;
+}
+*/
+function naipeDeTruco(naipe) {
+  var resultado = [];
+  for (var i = 1; i <= 12; i++) {
+    if (i == 8) {
+      i = i + 1;
+    } else {
+      resultado.push(i + " de " + naipe);
+    }
+  }
+  return resultado;
+}
+
+
+
+var altura1 = 1.2;
+var altura2 = 1.5;
+function podeSubir(alturaPessoa, vemComCompania, temProblemaCardiaco){
+  return (alturaPessoa == altura2) && temProblemaCardiaco != true || (alturaPessoa == altura1)  &&  vemComCompania != false && temProblemaCardiaco != true;
+}
+
+function produto(v){
+   var res = 1;
+   for(var i = 0; i < v.length; i++){
+   	res *= v[i];		
+   } 
+   return res;
+}
+
+
+/*function maisMenos(array){
+	let positivos = 0
+	let zero = 0
+	let negativos = 0
+
+	let arrayp = []
+	let arrayz = []
+	let arrayn = []
+
+	for(var i=0; i<array.length; i++){
+		if(array[i] > 0){
+			positivos = positivos + 1
+			arrayp = [positivos]
+		}
+		if(array[i] == 0){
+			zero = zero + 1
+			arrayz = [zero]
+		}
+	}
+	var zeros = 100 / (array.length / zero) /100
+	var positivos_r 100 /(array.length / positivos) /100
+
+	return positivos, zeros
+}
+*/
+
+/* function maisMenos(numeros){
+  var quantidade = numeros.length;
+  var positivos = 0;
+  var zeros = 0;
+  var negativos = 0;
+ console.log('Quantidade de elementos: ',quantidade)
+  for (var i = 0; i < quantidade; i++) {
+    if (numeros[i] > 0) {
+      positivos = positivos + 1;
+      } else if (numeros[i] < 0) {
+      negativos = negativos + 1;
+        } else {
+      zeros = zeros + 1;
+  }
+}
+  
+  positivos = positivos / quantidade;
+  zeros = zeros / quantidade;
+  negativos = negativos / quantidade;
+  var array = [positivos, zeros, negativos];
+  console.log(array);
+return array;
+}
+
+*/
+
+
 	</script>
 </body>
 </html>

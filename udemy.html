@@ -159,10 +159,27 @@ console.log(" ")
 	console.log("-> Informa quantos elementos existen dentro do ARRAY com lista1.length :")
 	console.log("A lista1 contem "+lista1.length+" elementos.")
 
+	console.log("-> Excluir o último elemento da lista1 com o .pop()")
+	lista1.pop()
+	console.log("Lista1 sem o último elemento: "+lista1)
 
+	console.log("-> Remover da Lista1 o primeiro item do ARRAY com .shift():")
+	lista1.shift()
+	console.log("Lista sem o primeiro elemento: "+lista1)
 
+	console.log("A lista1 agora tem "+lista1.length+" elementos")
 
-
+console.log(" ")
+	console.log("# Método de Pesquisa dentro do ARRAY:")
+	var lista2 = new Array()
+	lista2[0] = "Item1"
+	lista2[1] = "Item2"
+	lista2[2] = "Item3"
+	lista2[3] = "Item4"
+	console.log(lista2)
+	console.log("-> Com o .indexOf(elemento) irá retornar a posição do elemento dentro do Array")
+	var resultado = lista2.indexOf("Item1")
+	console.log("A posição do Item1 no Array: "+resultado)
 
 
 
