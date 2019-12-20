@@ -382,6 +382,25 @@ console.log(" ")
 	var letra = nome.toLowerCase()
 	var primeira = letra.charAt(0).toUpperCase()
 	console.log(primeira + letra.substr(1, letra.length))
+
+console.log(" ")
+	console.log("# DATAS")
+	var agora = new Date()
+	var meses = ["Janeiro","Fevereiro",'Março', "Abril", "Maio","Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ]
+	console.log(agora.getDate()+" de "+meses[agora.getMonth()]+" de "+agora.getFullYear())
+	
+console.log(" ")
+	console.log("# HORAS")
+	var agora = new Date()
+	function doisDigitosNaHora(tempo){
+		if(tempo < 10){
+			return "0"+tempo
+		} else {
+			return tempo
+		}
+	}
+	console.log(doisDigitosNaHora(agora.getHours())+":"+doisDigitosNaHora(agora.getMinutes())+":"+agora.getSeconds())
+
 	</script>
 
 </body>
